@@ -350,7 +350,7 @@ img {
 }
 
 .marquee-text {
-    font-family: 'Comfortaa', sans-serif;
+    font-family: 'Grobold', 'Fredoka One', cursive;
     font-size: 1.5rem;
     font-weight: 700;
     color: #ffffff;
@@ -358,6 +358,7 @@ img {
     display: inline-block;
     white-space: nowrap;
     word-spacing: 1em;
+    text-transform: uppercase;
 }
 
 @keyframes scroll-left {
@@ -546,14 +547,7 @@ img {
     height: auto;
     object-fit: contain;
     border-radius: 20px;
-    border: 4px solid #ffffff;
-    background-color: #ffffff;
-    padding: 15px;
-    box-shadow: 
-        8px 8px 0px #003399,
-        12px 12px 0px rgba(0, 0, 0, 0.2),
-        0 4px 20px rgba(0, 0, 0, 0.3);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: transform 0.3s ease;
 }
 
 .story-img:hover {

@@ -103,7 +103,12 @@
             <h2 class="find-title">Find $noki on Base</h2>
             <div class="contract-info">
                 <span class="ca-label">CA:</span>
-                <span class="ca-value">0xceef83c8c8622485e9f9e164d5c4561d04703708</span>
+                <div class="ca-value-container">
+                    <span class="ca-value" id="contractAddressInfo">0xceef83c8c8622485e9f9e164d5c4561d04703708</span>
+                    <button class="copy-btn-info" onclick="copyToClipboard('contractAddressInfo')" title="Copy to clipboard">
+                        <i class="fas fa-copy"></i>
+                    </button>
+                </div>
             </div>
         </div>
     </section>
@@ -207,7 +212,15 @@
                 <div class="faq-item">
                     <h4 class="faq-question">What is the official contract address for the $NOKI token?</h4>
                     <div class="contract-addresses-facts">
-                        <p><strong>Base CA:</strong> 0xceef83c8c8622485e9f9e164d5c4561d04703708</p>
+                        <div class="ca-container">
+                            <strong>Base CA:</strong>
+                            <div class="ca-address-container">
+                                <span class="ca-address" id="contractAddress">0xceef83c8c8622485e9f9e164d5c4561d04703708</span>
+                                <button class="copy-btn" onclick="copyToClipboard('contractAddress')" title="Copy to clipboard">
+                                    <i class="fas fa-copy"></i>
+                                </button>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
@@ -218,8 +231,6 @@
                         <a href="https://dexscreener.com/base/0xceef83c8c8622485e9f9e164d5c4561d04703708" target="_blank" class="info-link">DexScreener</a>
                         <a href="https://www.coingecko.com/en/coins/noki" target="_blank" class="info-link">CoinGecko</a>
                         <a href="https://coinmarketcap.com/currencies/noki/" target="_blank" class="info-link">CoinMarketCap</a>
-                        <a href="https://twitter.com/nokibase" target="_blank" class="info-link">X (Twitter)</a>
-                        <a href="https://t.me/nokibase" target="_blank" class="info-link">Telegram</a>
                     </div>
                 </div>
 

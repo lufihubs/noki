@@ -58,3 +58,56 @@ document.addEventListener('DOMContentLoaded', function() {
 if (navigator.hardwareConcurrency && navigator.hardwareConcurrency < 4) {
     document.documentElement.style.setProperty('--reduced-motion', '1');
 }
+
+// Copy to clipboard function
+function copyToClipboard(elementId) {
+    const element = document.getElementById(elementId);
+    const text = element.textContent;
+    
+    // Use the modern Clipboard API if available
+    if (navigator.clipboard && window.isSecureContext) {
+        navigator.clipboard.writeText(text).then(function() {
+            showCopyFeedback(element);
+        }).catch(function(err) {
+            // Fallback for older browsers
+            fallbackCopyTextToClipboard(text, element);
+        });
+    } else {
+        // Fallback for older browsers
+        fallbackCopyTextToClipboard(text, element);
+    }
+}
+
+function fallbackCopyTextToClipboard(text, element) {
+    const textArea = document.createElement("textarea");
+    textArea.value = text;
+    textArea.style.position = "fixed";
+    textArea.style.left = "-999999px";
+    textArea.style.top = "-999999px";
+    document.body.appendChild(textArea);
+    textArea.focus();
+    textArea.select();
+    
+    try {
+        document.execCommand('copy');
+        showCopyFeedback(element);
+    } catch (err) {
+        console.error('Could not copy text: ', err);
+    }
+    
+    document.body.removeChild(textArea);
+}
+
+function showCopyFeedback(element) {
+    const copyBtn = element.parentElement.querySelector('.copy-btn, .copy-btn-info');
+    if (copyBtn) {
+        const originalIcon = copyBtn.innerHTML;
+        copyBtn.innerHTML = '<i class="fas fa-check"></i>';
+        copyBtn.style.color = '#00ff88';
+        
+        setTimeout(() => {
+            copyBtn.innerHTML = originalIcon;
+            copyBtn.style.color = '';
+        }, 2000);
+    }
+}

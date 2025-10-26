@@ -28,6 +28,10 @@
     <link rel="preload" href="https://fonts.googleapis.com/css2?family=Fredoka+One:wght@400&family=Comfortaa:wght@300;400;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fredoka+One:wght@400&family=Comfortaa:wght@300;400;700&display=swap"></noscript>
     
+    <!-- Grobold Font -->
+    <link rel="preload" href="https://fonts.cdnfonts.com/css/grobold" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://fonts.cdnfonts.com/css/grobold"></noscript>
+    
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
@@ -55,6 +59,15 @@
             <div class="float-element float-4"><i class="fas fa-rocket"></i></div>
             <div class="float-element float-5"><i class="far fa-star"></i></div>
             <div class="float-element float-6"><i class="far fa-moon"></i></div>
+        </div>
+        
+        <!-- Transparent background images -->
+        <div class="trans-elements">
+            <img src="trans1.PNG" alt="" class="trans-img trans-1" loading="lazy">
+            <img src="trans2.PNG" alt="" class="trans-img trans-2" loading="lazy">
+            <img src="trans3.PNG" alt="" class="trans-img trans-3" loading="lazy">
+            <img src="trans4.PNG" alt="" class="trans-img trans-4" loading="lazy">
+            <img src="trans5.PNG" alt="" class="trans-img trans-5" loading="lazy">
         </div>
         
         <div class="content-container">
@@ -95,22 +108,82 @@
         </div>
     </section>
 
-    <section class="marquee-section">
-        <div class="marquee">
-            <span class="marquee-text">The Ticker is $Noki | The Ticker is $Noki | The Ticker is $Noki | The Ticker is $Noki | The Ticker is $Noki | The Ticker is $Noki | The Ticker is $Noki | The Ticker is $Noki | The Ticker is $Noki | The Ticker is $Noki | The Ticker is $Noki | The Ticker is $Noki | The Ticker is $Noki | The Ticker is $Noki | The Ticker is $Noki | The Ticker is $Noki | The Ticker is $Noki | The Ticker is $Noki | The Ticker is $Noki | The Ticker is $Noki |</span>
-        </div>
-    </section>
-
     <section class="story-section">
         <div class="story-container">
             <div class="story-image">
-                <img src="fish.png" alt="Noki Story" class="story-img" loading="lazy" width="400" height="400">
+                <img src="IMG_9187.JPG" alt="Noki Story" class="story-img" loading="lazy" width="400" height="400">
             </div>
             <div class="story-text">
                 <p>a penguin was posted by coinbase and cracked the ice<br>inspired by that noki was born</p>
                 <p>one by one, the colony gathered<br>not because they understood<br>but because they felt it</p>
                 <p>you don't hold noki<br>you follow him</p>
                 <p class="story-final">noki leads, we follow</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="marquee-section">
+        <div class="marquee">
+            <span class="marquee-text">The Ticker is $Noki | The Ticker is $Noki | The Ticker is $Noki | The Ticker is $Noki | The Ticker is $Noki | The Ticker is $Noki | The Ticker is $Noki | The Ticker is $Noki | The Ticker is $Noki | The Ticker is $Noki | The Ticker is $Noki | The Ticker is $Noki | The Ticker is $Noki | The Ticker is $Noki | The Ticker is $Noki | The Ticker is $Noki | The Ticker is $Noki | The Ticker is $Noki | The Ticker is $Noki | The Ticker is $Noki |</span>
+        </div>
+    </section>
+
+    <section class="gallery-section">
+        <div class="gallery-container">
+            <h2 class="gallery-title">The Noki Universe</h2>
+            <div class="horizontal-scroll">
+                <div class="gallery-track" id="galleryTrack">
+                    <!-- First set of images -->
+                    <div class="gallery-item">
+                        <img src="IMG_9181.JPG" alt="Noki Art 1" class="gallery-img">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="main.png" alt="Main Noki" class="gallery-img">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="IMG_9182.JPG" alt="Noki Art 2" class="gallery-img">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="IMG_9183.JPG" alt="Noki Art 3" class="gallery-img">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="IMG_9184.JPG" alt="Noki Art 4" class="gallery-img">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="ice.jpg" alt="Ice World" class="gallery-img">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="IMG_9185.JPG" alt="Noki Art 5" class="gallery-img">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="IMG_9186.JPG" alt="Noki Art 6" class="gallery-img">
+                    </div>
+                    <!-- Duplicate set for seamless loop -->
+                    <div class="gallery-item">
+                        <img src="IMG_9181.JPG" alt="Noki Art 1" class="gallery-img">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="main.png" alt="Main Noki" class="gallery-img">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="IMG_9182.JPG" alt="Noki Art 2" class="gallery-img">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="IMG_9183.JPG" alt="Noki Art 3" class="gallery-img">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="IMG_9184.JPG" alt="Noki Art 4" class="gallery-img">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="ice.jpg" alt="Ice World" class="gallery-img">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="IMG_9185.JPG" alt="Noki Art 5" class="gallery-img">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="IMG_9186.JPG" alt="Noki Art 6" class="gallery-img">
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -134,19 +207,19 @@
                 <div class="faq-item">
                     <h4 class="faq-question">What is the official contract address for the $NOKI token?</h4>
                     <div class="contract-addresses-facts">
-                        <p><strong>Base CA:</strong> Coming Soon</p>
+                        <p><strong>Base CA:</strong> 0xceef83c8c8622485e9f9e164d5c4561d04703708</p>
                     </div>
                 </div>
 
                 <div class="faq-item">
                     <h4 class="faq-question">Where can I find Noki?</h4>
                     <div class="links-grid">
-                        <a href="#" class="info-link">Basescan</a>
-                        <a href="#" class="info-link">BscScan</a>
-                        <a href="#" class="info-link">DexScreener</a>
-                        <a href="mailto:admin@noki.com" class="info-link">Contact</a>
-                        <a href="#" class="info-link">X (Twitter)</a>
-                        <a href="#" class="info-link">Telegram</a>
+                        <a href="https://basescan.org/token/0xceef83c8c8622485e9f9e164d5c4561d04703708" target="_blank" class="info-link">Basescan</a>
+                        <a href="https://dexscreener.com/base/0xceef83c8c8622485e9f9e164d5c4561d04703708" target="_blank" class="info-link">DexScreener</a>
+                        <a href="https://www.coingecko.com/en/coins/noki" target="_blank" class="info-link">CoinGecko</a>
+                        <a href="https://coinmarketcap.com/currencies/noki/" target="_blank" class="info-link">CoinMarketCap</a>
+                        <a href="https://twitter.com/nokibase" target="_blank" class="info-link">X (Twitter)</a>
+                        <a href="https://t.me/nokibase" target="_blank" class="info-link">Telegram</a>
                     </div>
                 </div>
 
@@ -178,5 +251,7 @@
             </div>
         </div>
     </section>
+
+    <script src="script.js"></script>
 </body>
 </html>
